@@ -10,7 +10,7 @@ eureka:
 spring:
     application:
         exchange: product.events.fanout.exchange
-        queue: event.stream
+        queue: product.default.queue
         terminal: product.axon.terminal
     rabbitmq:
         hostname: localhost
