@@ -5,15 +5,15 @@ ribbon:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
   instance:
     preferIpAddress: true
 
 zuul:
   routes:
-    product-command-side:
+    seat-command-side:
       path: /commands/**
-    product-query-side:
+    seat-query-side:
       path: /queries/**
   debug:
     request: true
